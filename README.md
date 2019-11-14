@@ -61,7 +61,7 @@ All parameters are optional.
 | **`buttonDeletePosition`**    | `string`  | `null`  | Position delete button in the last row                                                          | No       |
 | **`pinContainerStyles`**| `object`  | `{}`    | Styles for pin code container without bottom element | No       |
 | **`containerStyles`**| `object`  | `{}`    | Styles for pin code container with bottom element (Higher than pin code container styles) | No       |
-| **`zeroButtonStyle`**| `object`  | `{}`    | Styles for zero (0) button | No       |
+| **`zeroButtonStyle`**| `object`  | `{}`    | Styles for the zero (0) button | No       |
 | **`keyButtons`**| `string`  | `pin-buttons`    | Key for map array of buttons (0...9) for some cases | No       |
 
 ## Built With
