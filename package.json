@@ -1,0 +1,33 @@
+{
+  "name": "react-native-custom-pin-code",
+  "version": "1.0.0",
+  "description": "Custom pincode for React-Native",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TchernyavskyDaniil/react-native-custom-pin-code.git"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "javascript",
+    "pincode",
+    "pin-view"
+  ],
+  "author": "Daniil Tchernyavsky <tchernyavksy.daniil@yandex.ru> (https://github.com/TchernyavskyDaniil)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TchernyavskyDaniil/react-native-custom-pin-code/issues"
+  },
+  "homepage": "https://github.com/TchernyavskyDaniil/react-native-custom-pin-code#readme",
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "react": "^16.11.0",
+    "react-native": "^0.61.4"
+  }
+}
