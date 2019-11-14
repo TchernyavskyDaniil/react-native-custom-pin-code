@@ -1,7 +1,7 @@
 # React Native Custom Pin Code
 ### Simple realization with some custom styles (left element, right element near the zero button and some bottom button, for example 'Exit'), complete/clear callback, etc.
 
-(https://giphy.com/gifs/S9oOk7Pkb8uKvHxdzM)
+(https://media.giphy.com/media/S9oOk7Pkb8uKvHxdzM/giphy.gif)
 
 ## Installation
 
