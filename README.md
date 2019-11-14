@@ -4,7 +4,7 @@
 ## Installation
 
 ```
-$ npm install --save react-native-custom-pincode
+$ npm install --save react-native-custom-pin-code
 ```
 
 ## Usage
