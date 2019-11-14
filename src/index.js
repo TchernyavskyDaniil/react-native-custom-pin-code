@@ -180,6 +180,6 @@ export const CustomPincode = ({
   )
 }
 
-PinView.defaultProps = defaultProps
+CustomPincode.defaultProps = defaultProps
 
-PinView.propTypes = types
+CustomPincode.propTypes = types

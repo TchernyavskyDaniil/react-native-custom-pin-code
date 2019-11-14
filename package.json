@@ -1,7 +1,7 @@
 {
   "name": "react-native-custom-pin-code",
-  "version": "1.0.0",
-  "description": "Custom pincode for React-Native",
+  "version": "1.0.1",
+  "description": "Custom pin code for React-Native",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -9,7 +9,7 @@ $ npm install --save react-native-custom-pincode
 
 ## Usage
 
-`import { CustomPincode } from 'react-native-custom-pincode';`
+`import { CustomPincode } from 'react-native-custom-pin-code';`
 
 All parameters are optional.
 
