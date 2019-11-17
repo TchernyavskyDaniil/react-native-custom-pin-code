@@ -5,7 +5,7 @@ import { styles } from './styles'
 import { types } from './types'
 import { defaultProps } from './defaultProps'
 
-const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 export const CustomPincode = ({
   leftElement,
@@ -41,9 +41,9 @@ export const CustomPincode = ({
   isPinError,
   errorPointStyles,
 }) => {
-  const [pinValues, setPinValues] = useState('')
+  const [pinValues, setPinValues] = useState('');
 
-  const mergeStyles = useCallback((a, b) => ({ ...a, ...b }), [])
+  const mergeStyles = useCallback((a, b) => ([a, b]), []);
 
   const handleOnPressNumber = useCallback(
     newVal => {
@@ -52,7 +52,7 @@ export const CustomPincode = ({
       }
     },
     [pinLength, pinValues.length],
-  )
+  );
 
   const handleOnDeleteLatestValue = useCallback(
     /**
@@ -63,7 +63,7 @@ export const CustomPincode = ({
       setPinValues(v => (typeof isClearAll !== 'object' && isClearAll ? '' : v.slice(0, -1)))
     },
     [],
-  )
+  );
 
   const renderDelete = useMemo(
     () =>
@@ -73,17 +73,17 @@ export const CustomPincode = ({
         </TouchableOpacity>
       ),
     [buttonDeleteElement, handleOnDeleteLatestValue, pinValues],
-  )
+  );
 
   const buttonStyles = useMemo(() => mergeStyles(styles.button, pinButtonStyle), [
     mergeStyles,
     pinButtonStyle,
-  ])
+  ]);
 
   const buttonTextStyle = useMemo(() => mergeStyles(styles.buttonText, pinTextStyle), [
     mergeStyles,
     pinTextStyle,
-  ])
+  ]);
 
   const renderNumbers = useMemo(
     () =>
@@ -97,13 +97,13 @@ export const CustomPincode = ({
         </TouchableOpacity>
       )),
     [buttonStyles, buttonTextStyle, handleOnPressNumber, keyButtons],
-  )
+  );
 
   useEffect(() => {
     if (pinValues.length >= pinLength) {
       completeCallback(pinValues, handleOnDeleteLatestValue)
     }
-  }, [completeCallback, handleOnDeleteLatestValue, pinLength, pinValues])
+  }, [completeCallback, handleOnDeleteLatestValue, pinLength, pinValues]);
 
   const pinStyles = useMemo(
     () => ({
@@ -126,13 +126,13 @@ export const CustomPincode = ({
       rightContainerStyle,
       pointActiveStyle,
     ],
-  )
+  );
 
   return (
     <>
       <View style={pinStyles.points}>
         {[...Array(pointsLength || pinLength).keys()].map(point => {
-          let currentPointStyle = pointStyle
+          let currentPointStyle = pointStyle;
 
           if (isPinError) {
             currentPointStyle = errorPointStyles
@@ -140,7 +140,7 @@ export const CustomPincode = ({
             currentPointStyle = pinStyles.pointActive
           }
 
-          currentPointStyle = mergeStyles(styles.point, currentPointStyle)
+          currentPointStyle = mergeStyles(styles.point, currentPointStyle);
 
           return <View style={currentPointStyle} key={`${point}${keyPoints}`} />
         })}
@@ -178,8 +178,8 @@ export const CustomPincode = ({
       </View>
     </>
   )
-}
+};
 
-CustomPincode.defaultProps = defaultProps
+CustomPincode.defaultProps = defaultProps;
 
-CustomPincode.propTypes = types
+CustomPincode.propTypes = types;

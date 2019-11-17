@@ -50,4 +50,4 @@ export const styles = StyleSheet.create({
   pointActive: {
     backgroundColor: 'black',
   },
-})
+});

@@ -33,4 +33,4 @@ export const types = {
   keyPoints: PropTypes.string,
   isPinError: PropTypes.bool,
   errorPointStyles: ViewPropTypes.style,
-}
+};

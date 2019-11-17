@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native'
 
-const defaultFunc = () => {}
-const defaultSheet = StyleSheet.create({})
+const defaultFunc = () => {};
+const defaultSheet = StyleSheet.create({});
 
 export const defaultProps = {
   leftElement: null,
@@ -36,4 +36,4 @@ export const defaultProps = {
   keyPoints: 'key-points',
   isPinError: false,
   errorPointStyles: defaultSheet,
-}
+};
